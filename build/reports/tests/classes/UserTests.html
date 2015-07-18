@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class UserTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class UserTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; UserTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.513s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testGetUserById</td>
+<td>2.513s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Hibernate: select user0_.Id as Id1_0_0_, user0_.Email as Email2_0_0_, user0_.FacebookId as Facebook3_0_0_, user0_.FirstName as FirstNam4_0_0_ from [User] user0_ where user0_.Id=?
+user first name Noon
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Jul 18, 2015 10:08:52 AM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+Jul 18, 2015 10:08:52 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.6.Final}
+Jul 18, 2015 10:08:52 AM org.hibernate.cfg.Environment &lt;clinit&gt;
+INFO: HHH000206: hibernate.properties not found
+Jul 18, 2015 10:08:52 AM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+Jul 18, 2015 10:08:52 AM org.hibernate.cfg.Configuration configure
+INFO: HHH000043: Configuring from resource: /hibernate.cfg.xml
+Jul 18, 2015 10:08:52 AM org.hibernate.cfg.Configuration getConfigurationInputStream
+INFO: HHH000040: Configuration resource: /hibernate.cfg.xml
+Jul 18, 2015 10:08:52 AM org.hibernate.internal.util.xml.DTDEntityResolver resolveEntity
+WARN: HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+Jul 18, 2015 10:08:52 AM org.hibernate.cfg.Configuration doConfigure
+INFO: HHH000041: Configured SessionFactory: null
+Jul 18, 2015 10:08:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
+Jul 18, 2015 10:08:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000401: using driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] at URL [jdbc:sqlserver://localhost\SQLEXPRESS:1433;databaseName=TestDb]
+Jul 18, 2015 10:08:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000046: Connection properties: {user=sa, password=****}
+Jul 18, 2015 10:08:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH000006: Autocommit mode: false
+Jul 18, 2015 10:08:52 AM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+INFO: HHH000115: Hibernate connection pool size: 10 (min=1)
+Jul 18, 2015 10:08:53 AM org.hibernate.dialect.Dialect &lt;init&gt;
+INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+Jul 18, 2015 10:08:53 AM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+INFO: HHH000399: Using default transaction strategy (direct JDBC transactions)
+Jul 18, 2015 10:08:53 AM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+Jul 18, 2015 10:08:53 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Jul 18, 2015 10:08:53 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000102: Fetching database metadata
+Jul 18, 2015 10:08:53 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000396: Updating schema
+Jul 18, 2015 10:08:54 AM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+INFO: HHH000261: Table found: TestDb.dbo.User
+Jul 18, 2015 10:08:54 AM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+INFO: HHH000037: Columns: [relationshipstatus, facebookaccesstoken, clientversion, phonenotificationtoken, isprofilecompleted, mobilecarriercode, subscriptionexpireddate, stripecustomerid, streampostactivitycount, clientipaddress, college, createdate, dateofbirth, isalreadyenabledtimetravel, customertype, lastupdate, religion_id, isuseddefaultcountrycity, height, mobilenumber, isdeleted, timezoneoffset, longitude, credit, isdeactivated, aboutme, allprofilephotos, occupation, invalidfbtokencount, ethnicity_id, facebookid, setistargetedtofalsereason, email, islatlonfrommobilegps, language, latitude, ispushtokenvalid, interestedin, islatlonfromfacebookcurrentcountrycity, subscriptionstatus, highschool, sex, activescore, macaddress, employer, lastname, graduateschool, istargeted, usersource, setisdeletedtotruereason, city_id, id, rate, deviceplatform, malefriendscount, country_id, islatlonfromipaddress, firstname, femalefriendscount, islatlonfromdefault, showedprofilephotos, subscriptioncreatedate, isuseddefaulttimezoneoffset, guid, isdeltascorecached, friendsfromcountrycount, mobilecarriername, isenabletimetravel]
+Jul 18, 2015 10:08:54 AM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+INFO: HHH000108: Foreign keys: []
+Jul 18, 2015 10:08:54 AM org.hibernate.tool.hbm2ddl.TableMetadata &lt;init&gt;
+INFO: HHH000126: Indexes: [pk__user__3214ec075d82ccb4, uq__user__a9d10534605f395f, uq__user__4d656465633ba60a]
+Jul 18, 2015 10:08:54 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000232: Schema update complete
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.4</a> at Jul 18, 2015 10:08:54 AM</p>
+</div>
+</div>
+</body>
+</html>
